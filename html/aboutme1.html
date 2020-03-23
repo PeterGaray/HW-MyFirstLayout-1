@@ -6,33 +6,28 @@
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Spartan:400,500&display=swap" rel="stylesheet">
   </head>
+
   <body>
-  
-  <nav>
-  	
-  	<div class="navbar">
-  		<img src="../images/logo.png" class="logo">
-  		<div class="navi">
-  		About me
-
- 		 </div>
-
-  		<div class="navi">
-  		Resume
-
-  		</div>
-
-  		<div class="navi">
-  		Portfolio
-
-  		</div>
-  	</div>
-  </nav>
+    <nav>
+      
+      <div class="navbar">
+        <img src="../images/logo.png" class="logo">
+        <div class="navi">
+        About me
+       </div>
+        <div class="navi">
+        Resume
+        </div>
+        <div class="navi">
+        Portfolio
+        </div>
+      </div>
+    </nav>
 <br><br><br><br><br><br><br><br><br>
   <div class="aboutme">
 
     <div class="left">
-    <h1>ABOUT ME</h1>
+    <h1 class="center h1">ABOUT ME</h1> <!-- added class center so the heading is centered -->
       <div>
       <img src="../images/profilepic.png" class="profilepic">
       </div>
@@ -46,16 +41,29 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
       </p>
-       <img src="../images/socialmedia.png">
+        <div class="center"> <!-- I put the img into a div with class center so it is centered as in your image -->
+         <img src="../images/socialmedia.png">
+        </div>    <!-- Ending the centering div -->
     </div>
       
     </div>
-  
-  
-
-
-
-
-
   </body>
 </html>
+
+<!-- 
+Your navigation doesn't stretch across the whole screen because you specified exact width in pixels, if you would do %, it would always be that width of the browser window.
+no reason to give navbar position absolute. (unless you want to move it within a relative div)
+
+The code is readable
+folders are well done
++1 for working github
+
+although you defined h1 class in css, you didn't assign that class to the h1. If you want to assign it to the h1, you have to give it a class of h1
+in css it would just be 
+h1{
+some properties here..
+}
+I gave it the class so you can see what it does.
+
+Good work with floats left and right in order to put the image next to the text
+ -->

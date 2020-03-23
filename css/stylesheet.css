@@ -62,3 +62,7 @@ body{
 }
 
 
+/*Added class for centering */
+.center{
+	text-align: center;
+}
